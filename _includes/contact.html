@@ -12,7 +12,12 @@
             <a id="contact-button" href="mailto:{{site.email}}"
                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
                 target="_blank">
-                <i class="fas fa-envelope"></i>Send me an Email
+                <i class="fas fa-envelope"></i>Contact Me - {{site.email}}
+            </a>
+            <a id="contact-button" href="mailto:support@toddr.org"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fas fa-envelope"></i>Send a support request - support@toddr.org
             </a>
             {% endunless %}
             {% unless site.twitter_username == %}
@@ -40,7 +45,9 @@
                 <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
                 {% endunless %}
                 {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
+                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i><div style="font-size: 50%;">Github</div></a>
+                <a href="http://www.gitlab.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-gitlab"></i><div style="font-size: 50%;">Gitlab</div></a>
+                <a href="http://g.dev/rylaarsdam" target="_blank" class="has-text-black"><i class="fas fa-code"></i><div style="font-size: 50%;">Google Developers</div></a>
                 {% endunless %}
                 {% unless site.youtube_channel_id ==  %}
                 <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>
