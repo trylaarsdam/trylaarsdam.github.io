@@ -9,15 +9,17 @@
             </a>
             {% endunless %}
             {% unless site.email == %}
+            <h4>To contact me email:</h4>
             <a id="contact-button" href="mailto:{{site.email}}"
                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
                 target="_blank">
-                <i class="fas fa-envelope"></i>Contact Me - {{site.email}}
+                <i class="fas fa-envelope"></i>{{site.email}}
             </a>
+            <h4>For product support email:</h4>
             <a id="contact-button" href="mailto:support@toddr.org"
                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
                 target="_blank">
-                <i class="fas fa-question"></i>Support - support@toddr.org
+                <i class="fas fa-question"></i>support@toddr.org
             </a>
             {% endunless %}
             {% unless site.twitter_username == %}
