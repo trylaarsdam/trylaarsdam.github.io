@@ -19,7 +19,7 @@ You can learn more about the Emulator at [cpu.toddr.org](https://cpu.toddr.org/)
 
 Here's a peak at v2 of the hardware portion of this project:
 
-<img src="cdn.toddr.org/assets/images/cpuv2-min.jpeg"
+<img src="https://cdn.toddr.org/assets/images/cpuv2-min.jpeg"
      alt="CPU Hardware V2"
      style="float: left; margin-right: 10px;" />
 
