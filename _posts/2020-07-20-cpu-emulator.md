@@ -17,11 +17,9 @@ Unlimited virtual components are emulated according to the user's specifications
 
 You can learn more about the Emulator at [cpu.toddr.org](https://cpu.toddr.org/). A V2 version branded as NAND7400 is coming soon at [nand7400.com](https://nand7400.com).
 
-Here's a peak at v2 of the hardware portion of this project:
-
 <img src="https://cdn.toddr.org/assets/images/cpuv2-min.jpeg"
      alt="CPU Hardware V2"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px; height: 50px;" />
 
 ## Making this project
 
