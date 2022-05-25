@@ -17,10 +17,6 @@ Unlimited virtual components are emulated according to the user's specifications
 
 You can learn more about the Emulator at [cpu.toddr.org](https://cpu.toddr.org/). A V2 version branded as NAND7400 is coming soon at [nand7400.com](https://nand7400.com).
 
-<img src="https://cdn.toddr.org/assets/images/cpuv2-min.jpeg"
-     alt="CPU Hardware V2"
-     style="float: left; margin-right: 10px; height: 50px;" />
-
 ## Making this project
 
 The CPU Emualtor is really more than just an emulator. It's an entire suite of tools that can be used to create partially emulated and partially DIY CPUs. The emulator itself is a python app with a simple Electron frontend. Users can define their own instruction set, architecture, CPU components, microcode, and more. All of this is done in a few easy to edit JSON files. 
