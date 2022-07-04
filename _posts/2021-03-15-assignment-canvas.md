@@ -1,5 +1,5 @@
 ---
-title: Assignment Canvas
+title: Assignment Canvas (v1)
 layout: post
 post-image: "https://www.american.edu/library/technology/canvas/images/canvas_logo.jpg"
 description: Tapping directly into the Canvas API, Assignment Canvas organizes all your announcements and assignments from all your courses into one central location. No more clicking through a dozen courses to find all your homework.
@@ -19,3 +19,5 @@ Assignment Canvas uses the public Canvas API to fetch all your announcements and
 User profile information (like whether or not they are an Assignment Canvas Administrator, their name, profile picture, etc.) is stored in Google's Firebase Firestore database. Users login using their Google account, so we don't need to manage any passwords or anything like that. None of a user's Canvas data is stored by us. That's both how we keep the privacy of student's education intact, and how the information displayed is always up to date.
 
 Overall, this project took about 2 months of work to create the working site, and I've been updating it on and off for the past few months. Depending on what college I choose to go to has as their LMS, you might see more changes in the future.
+
+Edit: A v2 has been released and is now live at https://canvas.toddr.org
