@@ -1,7 +1,7 @@
 ---
 title: SpaceBot Enclosure Design
 layout: post
-post-image: "https://cdn.toddr.org/assets/images/spacebot-render.png"
+post-image: "https://toddr.org/assets/images/spacebot-render.png"
 description: 
 tags:
 - iot
