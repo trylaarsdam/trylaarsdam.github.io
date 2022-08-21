@@ -1,7 +1,7 @@
 ---
 title: Kimball & Bean Plates
 layout: post
-post-image: "https://cdn.toddr.org/assets/images/kimballbean.png"
+post-image: "https://toddr.org/assets/images/kimballbean.png"
 description: 
 tags:
 - 3d modeling
