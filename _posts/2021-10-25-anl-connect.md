@@ -1,7 +1,7 @@
 ---
 title: ANL Connect
 layout: post
-post-image: "https://cdn.toddr.org/assets/images/anlconnect.png"
+post-image: "https://toddr.org/assets/images/anlconnect.png"
 description: Controls and configures Gen3 Gemini series underground soil sensors built by Windy City Lab for Argonne National Labs. Android only.
 tags:
 - embedded
