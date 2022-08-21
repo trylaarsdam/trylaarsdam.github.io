@@ -1,5 +1,5 @@
 ---
-title: Demos
+title: Portfolio/Demos
 layout: page
 ---
 
