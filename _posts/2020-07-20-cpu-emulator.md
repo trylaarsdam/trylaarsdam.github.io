@@ -1,7 +1,7 @@
 ---
 title: CPU Emulator
 layout: post
-post-image: "https://cdn.toddr.org/assets/images/cpu.png"
+post-image: "https://toddr.org/assets/images/cpu.png"
 description: Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.
 tags:
 - desktop
