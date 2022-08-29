@@ -5,7 +5,7 @@ layout: page
 
 TCHS Chapel Band (FOH + Livestream Audio) |  AWS Training Event (AV Setup)
 :-------------------------:|:-------------------------:
-[![TCHS Chapel Band](http://img.youtube.com/vi/CUlJ86BDepU/0.jpg)](http://www.youtube.com/watch?v=CUlJ86BDepU "TCHS Chapel Band") |  <iframe width="420" height="315" src="https://toddr.org/assets/videos/aws-setup.mp4" frameborder="0" allowfullscreen> </iframe>
+[![TCHS Chapel Band](http://img.youtube.com/vi/CUlJ86BDepU/0.jpg)](http://www.youtube.com/watch?v=CUlJ86BDepU "TCHS Chapel Band") |  <iframe width="420" height="315" src="https://toddr.org/assets/videos/aws-setup.mp4" frameborder="0" allowfullscreen>&nbsp;</iframe>
 :-------------------------:|:-------------------------:
 Timothy Christian Octoberfest 2020 (Camera, Graphics) |  Timothy Christian Octoberfest 2019 (Lighting)
 :-------------------------:|:-------------------------:
