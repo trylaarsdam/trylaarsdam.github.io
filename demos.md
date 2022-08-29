@@ -14,7 +14,7 @@ A simple website using IBM's Carbon Charts and Vue2 that allows users to open CS
 All data is stored in your browser, and never sent to my servers. This was requested by a friend for use at their work as an easy way to
 visualize CSV data.
 
-# [AVL Productions](https://toddr.org/demos/production)
+# [Productions](https://toddr.org/demos/production)
 A small portfolio of some of the more complex events and productions I have done either audio, lighting or camera work for. 
 
 # [AWS Training Event @ Chicago Connectory](https://www.linkedin.com/posts/michelle--ayala_aws-bosch-jll-activity-6925848068588261376-AOxD?utm_source=linkedin_share&utm_medium=member_desktop_web)
