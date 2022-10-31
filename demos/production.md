@@ -4,7 +4,7 @@ layout: page
 ---
 Most images link to videos.
 
-Oliver! @ George Fox University (Mix Engineer) |  AWS Training Event (AV Setup)
+Oliver! @ George Fox University (Mix Engineer) |  AWS Training Event (AV Setup & Design)
 :-------------------------:|:-------------------------:
 <img src="https://toddr.org/assets/images/oliver.jpg" alt="drawing" width="480"/> | <a href="https://toddr.org/assets/videos/aws-setup.mp4"> <img src="https://toddr.org/assets/images/aws-2022.jpg" alt="drawing" width="480"/></a>
 :-------------------------:|:-------------------------:
