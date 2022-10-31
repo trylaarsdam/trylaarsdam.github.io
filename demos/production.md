@@ -4,9 +4,9 @@ layout: page
 ---
 Most images link to videos.
 
-TCHS Chapel Band (FOH + Livestream Audio) |  AWS Training Event (AV Setup)
+Oliver! @ George Fox University (Mix Engineer) |  AWS Training Event (AV Setup)
 :-------------------------:|:-------------------------:
-[![TCHS Chapel Band](http://img.youtube.com/vi/CUlJ86BDepU/0.jpg)](http://www.youtube.com/watch?v=CUlJ86BDepU "TCHS Chapel Band") | <a href="https://toddr.org/assets/videos/aws-setup.mp4"> <img src="https://toddr.org/assets/images/aws-2022.jpg" alt="drawing" width="480"/></a>
+[![Oliver](http://toddr.org/assets/images/oliver.jpg)](http://www.youtube.com/watch?v=CUlJ86BDepU "TCHS Chapel Band") | <a href="https://toddr.org/assets/videos/aws-setup.mp4"> <img src="https://toddr.org/assets/images/aws-2022.jpg" alt="drawing" width="480"/></a>
 :-------------------------:|:-------------------------:
 Timothy Christian Octoberfest 2020 (Camera, Graphics) |  Timothy Christian Octoberfest 2019 (Lighting)
 :-------------------------:|:-------------------------:
