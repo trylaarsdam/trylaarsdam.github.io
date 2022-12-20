@@ -1,5 +1,5 @@
 ---
-title: Portfolio/Demos
+title: Demos
 layout: page
 ---
 
@@ -16,7 +16,3 @@ visualize CSV data.
 
 # [Productions](https://toddr.org/demos/production)
 A small portfolio of some of the more complex events and productions I have done either audio, lighting or camera work for. 
-
-# [AWS Training Event @ Chicago Connectory](https://www.linkedin.com/posts/michelle--ayala_aws-bosch-jll-activity-6925848068588261376-AOxD?utm_source=linkedin_share&utm_medium=member_desktop_web)
-Along with the rest of the Chicago Connectory staff, I setup the AV systems for an AWS training event hosted at Bosch's Chicago Connectory. It involved 4 TVs all displaying the output of the presenter's laptop accross the space, ensuring presenters were trained in how to use their microphones, and making sure that all cables were hidden and not distracting.
-
