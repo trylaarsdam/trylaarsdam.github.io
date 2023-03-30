@@ -1,4 +1,6 @@
 baseURL = "https://beta.toddr.org"
+theme = ["hugo-theme-shell"]
+enableInlineShortcodes = true
 [Params]
   # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
   description = "Todd Rylaarsdam's Portfolio"
