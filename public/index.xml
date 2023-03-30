@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU Emulator</title>
+      <link>/projects/cpu-emulator/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/cpu-emulator/</guid>
+      <description>Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.
+The emulator supports up to 32 hardware components that interface with a Particle microcontroller over a custom PCB. Components can be built by hand on a breadboard, or made on custom PCBs.</description>
+    </item>
+    
+  </channel>
+</rss>
