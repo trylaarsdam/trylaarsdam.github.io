@@ -13,7 +13,7 @@ Completed: 2022-07-03 | Personal Project
 
 <!-- {{< imagewithtext img="/assets/assignment-canvas-v2-app.jpg" >}} -->
 
-This is a version 2 of the old Assignment Canvas I built back in 2021 ([learn more about that here](https://toddr.org/projects/assignment-canvas-v1)). This new and improved version adds a bunch of stuff the old one didn't have, like viewing assignments in detail, external linking to Canvas, an easier setup process, and a new responsive UI. You can give it a try at [canvas.toddr.org](https://canvas.toddr.org)
+This is a version 2 of the old Assignment Canvas I built back in 2021 ([learn more about that here](/projects/assignment-canvas-v1)). This new and improved version adds a bunch of stuff the old one didn't have, like viewing assignments in detail, external linking to Canvas, an easier setup process, and a new responsive UI. You can give it a try at [canvas.toddr.org](https://canvas.toddr.org)
 
 I also made an Android app using Kotlin and Jetpack Compose that interacts with the Assignment Canvas API to let you view your account and feed from your phone. You can find it [for free on the play store](https://play.google.com/store/apps/details?id=com.trylaarsdam.assignmentcanvas). 
 
