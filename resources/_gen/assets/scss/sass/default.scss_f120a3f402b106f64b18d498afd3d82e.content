@@ -13,6 +13,9 @@ body {
   font-weight: normal;
   color: white; }
 
+h1 {
+  line-height: 8vmin; }
+
 body {
   margin: 0;
   display: flex;
@@ -51,7 +54,7 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     font-size: 2.5vmin;
-    line-height: 2.6vmin; }
+    line-height: 2.8vmin; }
   #content {
     min-width: 60vmin; } }
 
@@ -60,13 +63,6 @@ section {
   padding-top: 10px; }
 
 div#sectionleft {
-  float: left;
   margin-right: 15px;
-  margin-bottom: 10px; }
-
-img#sectionleft {
-  width: 100%;
-  padding: auto; }
-
-div#sectionright {
-  margin: auto; }
+  margin-bottom: 10px;
+  padding-left: 15px; }

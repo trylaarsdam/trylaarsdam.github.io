@@ -12,6 +12,7 @@
                 </a>
               </h2>
 							<p>Employer/Client: {{ .Param "author.display_name" }} | Completed: {{ .Date.Format "2006-01-02" }}</p>
+							<p>Utilized: {{ .Description}} </p>
             </li>
             {{ end }}
           </ul>

@@ -3,6 +3,7 @@ title: CPU Emulator
 date: 2020-07-20
 author: 
   display_name: Windy City Lab
+description: Python, ElectronJS, MQTT, Particle MCUs, Flutter
 ---
 Completed: 2020-07-20 | Employer: Windy City Lab
 

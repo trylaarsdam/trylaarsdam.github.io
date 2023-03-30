@@ -3,6 +3,7 @@ title: Spacebot Sensor Enclosure
 date: 2021-01-11
 author: 
   display_name: Windy City Lab/Spacebot
+description: Onshape, 3D Printing
 ---
 Completed: 2020-11-10 | Client: Spacebot | Employer: Windy City Lab
 

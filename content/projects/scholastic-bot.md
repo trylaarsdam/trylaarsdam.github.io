@@ -3,6 +3,7 @@ title: Scholastic Bowl Bot
 date: 2020-11-10
 author: 
   display_name: Personal Project
+description: NodeJS, DiscordJS, ExpressJS, Nginx, Google Cloud, Heroku
 ---
 Completed: 2020-11-10 | Personal Project
 
