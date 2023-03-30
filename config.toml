@@ -21,8 +21,8 @@ baseURL = "https://beta.toddr.org"
   # ./[folderName]/
   # ...
   # Note: result of the tree command
-  userName = "trylaarsdam"
-  pcName = "laptop"
+  userName = "todd"
+  pcName = "toddr.org"
   workDir = "portfolio"
   profile = "profile.txt"
 
@@ -47,17 +47,8 @@ baseURL = "https://beta.toddr.org"
 
   # activityDelay = 5 : deprecated
 
-  description = """
-  Hi, I'm Todd Rylaarsdam, an embedded software developer.
-	I'm currently a student at George Fox University studying computer science.
-	This summer I'm working with the Mayo Clinic's BNEL lab as an embedded software intern. 
-	Before that I worked as a embedded software development and hardware engineering intern
-	for about a year and a half at Windy City Lab.
-  
-  """
-
   # Note: If you want to use a Markdown file, you can use the following
-  # description = "/description.md"
+  description = "/description.md"
   # Note: and put the description.md in /content/description.md
 
   [Params.Tree]
@@ -67,7 +58,7 @@ baseURL = "https://beta.toddr.org"
   files = [ 
     ["Resume", "/assets/resume.pdf"],
     ["Projects", "/projects"],
-    ["Go", "https://golang.org/"],
-    ["Hugo", "/post/some-activity.md"],
-    ["Docker", "/post/some-activity.md"],
+		["About Me", "/about"],
+    ["Audio Production", "/productions"],
+    ["Contact Me", "/contact"],
   ]

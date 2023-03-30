@@ -4,4 +4,5 @@
     {{ $content := printf "<span id='terminal'>%s</span>" .Content }}
 
     {{ partial "partials/typeActivity.html" (dict "context" . "title" $title "content" $content "titledelay" $.Site.Params.Terminal.titleDelay "contentdelay" $.Site.Params.Terminal.contentDelay )}}
+
 {{ end }}
