@@ -1,6 +1,6 @@
     {{ define "main" }}
         <main id="main">
-          <h1>{{ .Title }}</h1>
+          <h1>{{if ne .Title "Legals"}}{{ .Title }}{{else}}Legal{{end}}</h1>
           <ul>
             {{ range .Pages }}
             <li>
@@ -11,8 +11,10 @@
                   {{ end }}
                 </a>
               </h2>
+							{{ if .Param "author.display_name" }}
 							<p>Employer/Client: {{ .Param "author.display_name" }} | Completed: {{ .Date.Format "2006-01-02" }}</p>
 							<p>Utilized: {{ .Description}} </p>
+							{{end}}
             </li>
             {{ end }}
           </ul>
