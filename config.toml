@@ -61,4 +61,5 @@ baseURL = "https://beta.toddr.org"
 		["About Me", "/about"],
     ["Audio Production", "/productions"],
     ["Contact Me", "/contact"],
+		["System Status", "https://status.toddr.org"]
   ]
