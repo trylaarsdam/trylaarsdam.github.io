@@ -75,3 +75,20 @@ body {
         min-width: 60vmin;
     }
 }
+
+section {
+	margin: auto;
+	padding-top: 10px;
+}
+div#sectionleft {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+img#sectionleft {
+	width: 100%;
+	padding: auto;
+}
+div#sectionright {
+	margin: auto;
+}

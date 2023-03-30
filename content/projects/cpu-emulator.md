@@ -1,9 +1,11 @@
 ---
 title: CPU Emulator
 date: 2020-07-20
+author: 
+  display_name: Windy City Lab
 ---
 
-
+{{< imagewithtext img="/assets/cpu.jpg" text="Here is the good oil" >}}
 
 Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.
 

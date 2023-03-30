@@ -11,7 +11,7 @@
                   {{ end }}
                 </a>
               </h2>
-							<p>Completed {{ .Date.Format "2006-01-02" }}</p>
+							<p>Employer/Client: {{ .Param "author.display_name" }} | Completed: {{ .Date.Format "2006-01-02" }}</p>
             </li>
             {{ end }}
           </ul>
