@@ -1,0 +1,19 @@
+    {{ define "main" }}
+        <main id="main">
+          <h1>{{ .Title }}</h1>
+          <ul>
+            {{ range .Pages }}
+            <li>
+              <h2>
+                <a href="{{ .RelPermalink }}">
+                
+                  {{ .Title }}{{ if and (.IsPage) (.Site.Params.Extensions.use) }}{{ .Site.Params.Extensions.ext }}
+                  {{ end }}
+                </a>
+              </h2>
+							<p>Completed {{ .Date.Format "2006-01-02" }}</p>
+            </li>
+            {{ end }}
+          </ul>
+        </main>
+    {{ end }}
