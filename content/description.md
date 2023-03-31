@@ -1,4 +1,4 @@
-Hi, I'm Todd Rylaarsdam, an embedded software developer.
+Hi, I'm Todd Rylaarsdam, a software developer focused on the internet of things.
 
 I'm currently a student at George Fox University studying computer science.
 
