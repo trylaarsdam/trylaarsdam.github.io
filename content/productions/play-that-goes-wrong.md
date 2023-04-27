@@ -9,3 +9,4 @@ Completed: 2023-03-17 | George Fox University | Roles: Asst. Sound Designer, Mas
 
 ---
 {{< imagewithtext img="/assets/tptgw.jpg" >}}
+{{< imagewithtext img="/assets/tptgw-platform.png" >}}
