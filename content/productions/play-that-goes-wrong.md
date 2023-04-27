@@ -5,7 +5,7 @@ author:
 date: 2023-03-17
 description: QLab
 ---
-Completed: 2023-03-17 | George Fox University | Roles: Asst. Sound Designer, Master Sound Technician
+Completed: 2023-03-17 | George Fox University | Roles: Asst. Sound Designer, Master Sound Technician, Scenic Construction
 
 ---
 {{< imagewithtext img="/assets/tptgw.jpg" >}}
