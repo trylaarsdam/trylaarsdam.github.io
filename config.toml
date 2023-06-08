@@ -1,4 +1,4 @@
-baseURL = "https://beta.toddr.org"
+baseURL = "https://toddr.org"
 theme = ["hugo-theme-shell"]
 enableInlineShortcodes = true
 [Params]
