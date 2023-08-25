@@ -1,8 +1,8 @@
 Hi, I'm Todd Rylaarsdam, a software developer focused on the internet of things.
 
-I'm currently a student at George Fox University studying computer science.
+I'm currently a sophomore at George Fox University studying computer science with a focus on digital electronics.
 
-This summer I'm working with the Mayo Clinic's BNEL lab as an embedded software intern. 
+This past summer I worked with Mayo Clinic's Bioengineering Neurophysiology and Engineering Lab (BNEL), where I [created and deployed for patient use an embedded device capable of running seizure detection algorithms in real time](/projects/mayo-summer-2023).
 
 Previously I worked as an embedded software development and hardware engineering intern for a year and a half at Windy City Lab.
 
