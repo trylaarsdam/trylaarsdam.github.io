@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.117.0">
     <title>Todd Rylaarsdam</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,13 +13,19 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 97%;
   overflow: auto;
   font-family: "Inconsolata", monospace;
   font-size: 4vmin;
   line-height: 4.1vmin;
   font-weight: normal;
   color: white; }
+
+h1 {
+  line-height: 6vmin; }
+
+h2 {
+  line-height: 5.5vmin; }
 
 body {
   margin: 0;
@@ -59,10 +65,18 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     font-size: 2.5vmin;
-    line-height: 2.6vmin; }
+    line-height: 2.8vmin; }
   #content {
     min-width: 60vmin; } }
 
+section {
+  margin: auto;
+  padding-top: 10px; }
+
+div#sectionleft {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding-left: 15px; }
 
 
 
@@ -77,6 +91,11 @@ body {
 
 
 
+
+
+    
+
+    
 
     
 
@@ -332,6 +351,10 @@ body {
 
     
         
+    
+
+    
+
     
 
     
@@ -609,8 +632,11 @@ body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
 
     
     
-    
-    
+        
+        
+            
+            
+        
     
     
 
@@ -660,6 +686,34 @@ body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
 
             
             
+            
+                
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
             
             
             
@@ -742,18 +796,18 @@ body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
         stdoutDelay = parseDelay("1"),
         commandDelay = parseDelay("50");
     const typeeffetct = async () => {
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etrylaarsdam@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd portfolio\u003c\/span\u003e", "cd", commandDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etrylaarsdam@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.txt\u003c\/span\u003e", "cat", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e  Hi, I\u0027m Todd Rylaarsdam, an embedded software developer.\u003cbr\u003e\tI\u0027m currently a student at George Fox University studying computer science.\u003cbr\u003e\tThis summer I\u0027m working with the Mayo Clinic\u0027s BNEL lab as an embedded software intern. \u003cbr\u003e\tBefore that I worked as a embedded software development and hardware engineering intern\u003cbr\u003e\tfor about a year and a half at Windy City Lab.\u003cbr\u003e  \n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etrylaarsdam@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/links\/\u003c\/span\u003e", "tree", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/links\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027\/assets\/resume.pdf\u0027\u003eResume\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027\/projects\/\u0027\u003eProjects\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/golang.org\/\u0027\u003eGo\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027\/post\/some-activity.md\u0027\u003eHugo\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027\/post\/some-activity.md\u0027\u003eDocker\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etrylaarsdam@laptop\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etodd@toddr.org\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd portfolio\u003c\/span\u003e", "cd", commandDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etodd@toddr.org\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.txt\u003c\/span\u003e", "cat", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003eHi, I\u0026rsquo;m Todd Rylaarsdam, a software developer focused on the internet of things.\u003c\/p\u003e\n\u003cp\u003eI\u0026rsquo;m currently a student at George Fox University studying computer science.\u003c\/p\u003e\n\u003cp\u003eThis summer I\u0026rsquo;m working with the Mayo Clinic\u0026rsquo;s BNEL lab as an embedded software intern.\u003c\/p\u003e\n\u003cp\u003ePreviously I worked as an embedded software development and hardware engineering intern for a year and a half at Windy City Lab.\u003c\/p\u003e\n\u003cp\u003eYou can find me and my work on \u003ca href=\u0022https:\/\/github.com\/trylaarsdam\/\u0022\u003eGitHub (@trylaarsdam)\u003c\/a\u003e, \u003ca href=\u0022https:\/\/www.linkedin.com\/in\/trylaarsdam\/\u0022\u003eLinkedIn\u003c\/a\u003e, and \u003ca href=\u0022https:\/\/g.dev\/rylaarsdam\u0022\u003eGoogle Developers (@rylaarsdam)\u003c\/a\u003e.\u003c\/p\u003e\n\u003c\/span\u003e", "std_out_01", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etodd@toddr.org\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/links\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/links\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027\/assets\/resume.pdf\u0027\u003eResume\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/toddr.org\/projects\/\u0027\u003eProjects\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/dev.toddr.org\u0027\u003eDev Blog\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/toddr.org\/about\/\u0027\u003eAbout Me\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/toddr.org\/productions\/\u0027\u003eAudio Production\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/toddr.org\/contact\/\u0027\u003eContact Me\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/status.toddr.org\u0027\u003eSystem Status\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003etodd@toddr.org\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/portfolio\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
         return;
     }
 
     typeeffetct()
 </script>
-
+		<script src="https://toddrylaarsdam.statuspage.io/embed/script.js"></script>
 
         </div>
         
@@ -776,7 +830,7 @@ body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
         
         <span class="navCredits">
             © 2023 Todd Rylaarsdam. 
-            <a href="https://toddr.org/legal" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="/legal">Legal</a>
         </span>
 </span>
 

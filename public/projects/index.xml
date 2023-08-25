@@ -2,17 +2,128 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on </title>
-    <link>/projects/</link>
+    <link>https://toddr.org/projects/</link>
     <description>Recent content in Projects on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://toddr.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment Canvas v2</title>
+      <link>https://toddr.org/projects/assignment-canvas-v2/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/assignment-canvas-v2/</guid>
+      <description>Completed: 2022-07-03 | Personal Project
+This is a version 2 of the old Assignment Canvas I built back in 2021 (learn more about that here). This new and improved version adds a bunch of stuff the old one didn&amp;rsquo;t have, like viewing assignments in detail, external linking to Canvas, an easier setup process, and a new responsive UI. You can give it a try at canvas.toddr.org
+I also made an Android app using Kotlin and Jetpack Compose that interacts with the Assignment Canvas API to let you view your account and feed from your phone.</description>
+    </item>
+    
+    <item>
+      <title>eHealth Platform</title>
+      <link>https://toddr.org/projects/ehealth/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/ehealth/</guid>
+      <description>Completed: 2022-07-01 | Client: Mayo Clinic | Employer: Windy City Lab
+The EHealth system was part of a contract for Mayo Clinic&amp;rsquo;s BNEL (Bioelectronics Neurophysiology and Engineering) laboratory. Their focus is on patients with chronic epilepsy and seizures and using brain implants to try and detect and disrupt these events preemptively.
+WCL was originally only responsible for building an iOS and watchOS app for EHealth, however this transformed into a whole suite of tools that I was a part of building.</description>
+    </item>
+    
+    <item>
+      <title>Code Snippets</title>
+      <link>https://toddr.org/projects/code-snippets/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/code-snippets/</guid>
+      <description>Completed: 2022-06-15 | Personal Project
+After Windy City Lab switched over to using Discord for internal communication, we encountered a problem when sharing code: discord has a 2000 character limit for messages unless you subscribe to their Nitro plan. This meant that if you wanted to share a large code snippet, you had to either break it up into multiple messages, or upload it as a file. Neither of these options were ideal, so I decided to make a web app to solve this problem.</description>
+    </item>
+    
+    <item>
+      <title>Kimball &amp; Bean Nameplates</title>
+      <link>https://toddr.org/projects/kimball-bean/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/kimball-bean/</guid>
+      <description>Completed: 2022-04-30 | Client: Kimball &amp;amp; Bean for The White House | Employer: Windy City Lab
+This was a project from Kimball &amp;amp; Bean (makers of fancy custom planters and other garden ornaments) to manufacture branded nameplates to be used on a small run of planters destined for the first lady&amp;rsquo;s office in the White House.
+The plates were supposed to be ~5in x 1in, so the details present in their logo would be tricky to recreate.</description>
+    </item>
+    
+    <item>
+      <title>ANL Gen3 Soil Sensors</title>
+      <link>https://toddr.org/projects/anl-gen3/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/anl-gen3/</guid>
+      <description>Completed: 2022-03-01 | Client: Argonne National Laboratory | Employer: Windy City Lab
+I worked on this project at Windy City Lab as a full time intern there. This project included a lot of different components, from PCB design (including RF filtering and amplification) to 3d enclosure modeling to API work in Node.JS. The premise of the project was that Argonne National Laboratory along with the University of Chicago wanted to have a fleet of 150 soil sensors (motes) buried underground for 4 years on battery, wirelessly transmitting the data they read from their various sensors to the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Launch Chicago LMS</title>
+      <link>https://toddr.org/projects/launch-chicago/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/launch-chicago/</guid>
+      <description>Completed: 2021-12-12 | Employer: Windy City Lab
+This project was for an initiative of Windy City Lab called Launch Chicago. Launch wanted a learning management system (LMS) to facilitate their hybrid approach to teaching Swift, app development, and computer science, but nothing available on the market was really a good fit for the coding focued classwork.
+I worked on this app for a few months, first designing the data structures to store course content, user data, and results in, and then adding in both student and teacher/administrator UIs.</description>
+    </item>
+    
+    <item>
+      <title>ANL Connect</title>
+      <link>https://toddr.org/projects/anl-connect/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/anl-connect/</guid>
+      <description>Completed: 2021-10-25 | Client: Argonne National Laboratory | Employer: Windy City Lab
+ANL Connect controls and configures Gen3 Gemini series underground soil sensors built by Windy City Lab for Argonne National Labs. Currently the app is only available for Android, but there are plans to add iOS support in the future.
+The app uses low energy bluetooth (BLE) to communicate with the testing devices. Since we want to make sure everything is working as expected during our testing, the protocol that the app uses to communicate over BLE is very robust and filled with confirmations.</description>
+    </item>
+    
+    <item>
+      <title>Assignment Canvas v1</title>
+      <link>https://toddr.org/projects/assignment-canvas-v1/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/assignment-canvas-v1/</guid>
+      <description>Completed: 2021-03-15 | Personal Project
+Checkout the v2 of this project
+Tapping directly into the Canvas API, Assignment Canvas organizes all your announcements and assignments from all your courses into one central location. No more clicking through a dozen courses to find all your homework. Users simply enter an access token that is authorized to only read data from their account, and they&amp;rsquo;re up and running.
+Assignment Canvas was created when my school switched to Canvas as their LMS.</description>
+    </item>
+    
+    <item>
+      <title>Spacebot Sensor Enclosure</title>
+      <link>https://toddr.org/projects/spacebot-enclosure/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/spacebot-enclosure/</guid>
+      <description>Completed: 2020-11-10 | Client: Spacebot | Employer: Windy City Lab
+This was a project for SpaceBot, a startup that focuses on helping companies study how people use their spaces and offices. They use environmental and visual sensors to detect space usage in real time and show that to users in a web dashboard.
+My work focused on designing a new enclosure for both their environmental &amp;ldquo;kit&amp;rdquo; and visual kit. Design requirements like PoE compatibility, an adjustable camera mount, mounting for a Raspberry Pi 4 as well as an SSD were taken into consideration.</description>
+    </item>
+    
+    <item>
+      <title>Scholastic Bowl Bot</title>
+      <link>https://toddr.org/projects/scholastic-bot/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/scholastic-bot/</guid>
+      <description>Completed: 2020-11-10 | Personal Project
+A discord bot that enables virtual scholastic bowl competitions. Created in the age of COVID, this bot keeps track of buzzes and manages players in a discord voice chat.
+The scholastic bowl bot lets schools host virtual scholastic bowl competitions. By simply inviting the bot to a discord server and creating a few roles and voice channels, teams can run competitions, play local scrimages, and also benefit from the various community features in discord.</description>
+    </item>
+    
     <item>
       <title>CPU Emulator</title>
-      <link>/projects/cpu-emulator/</link>
+      <link>https://toddr.org/projects/cpu-emulator/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/projects/cpu-emulator/</guid>
-      <description>Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.
+      <guid>https://toddr.org/projects/cpu-emulator/</guid>
+      <description>Completed: 2020-07-20 | Employer: Windy City Lab
+Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.
 The emulator supports up to 32 hardware components that interface with a Particle microcontroller over a custom PCB. Components can be built by hand on a breadboard, or made on custom PCBs.</description>
     </item>
     

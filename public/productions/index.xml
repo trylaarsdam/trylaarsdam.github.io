@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productions on </title>
+    <link>https://toddr.org/productions/</link>
+    <description>Recent content in Productions on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://toddr.org/productions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Play that Goes Wrong (Asst. Sound Designer)</title>
+      <link>https://toddr.org/productions/play-that-goes-wrong/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/play-that-goes-wrong/</guid>
+      <description>Completed: 2023-03-17 | George Fox University | Roles: Asst. Sound Designer, Master Sound Technician, Scenic Construction</description>
+    </item>
+    
+    <item>
+      <title>Oliver (Mix Engineer)</title>
+      <link>https://toddr.org/productions/oliver/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/oliver/</guid>
+      <description>Completed: 2022-11-12 | George Fox University | Roles: Mix Engineer, Master Sound Technician, Scenic Construction</description>
+    </item>
+    
+    <item>
+      <title>AWS Training Event (AV Design)</title>
+      <link>https://toddr.org/productions/aws-training/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/aws-training/</guid>
+      <description>Completed: 2022-04-27 | Bosch | Roles: AV Design, AV Technician</description>
+    </item>
+    
+    <item>
+      <title>TCHS Chapels (Livestream, Sound)</title>
+      <link>https://toddr.org/productions/tchs-chapels/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/tchs-chapels/</guid>
+      <description>Completed: 2021-05-30 | Timothy Christian High School | Roles: Co-Tech Director, Mix Engineer, AVL System Tech, Lighting Designer</description>
+    </item>
+    
+    <item>
+      <title>TCHS Octoberfest (Lighting)</title>
+      <link>https://toddr.org/productions/octoberfest/</link>
+      <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/octoberfest/</guid>
+      <description>Completed: 2019-09-26 | Timothy Christian High School | Roles: Lighting Designer/Operator</description>
+    </item>
+    
+  </channel>
+</rss>
