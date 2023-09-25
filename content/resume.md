@@ -3,7 +3,7 @@ title: Resume
 ---
 # Todd Rylaarsdam
 ### Software Developer, Embedded Hardware Engineer
-+1 (331) 551-1758 | [todd@toddr.org](mailto:todd@toddr.org) | [Download as a PDF](/assets/resume.pdf)
+[todd@toddr.org](mailto:todd@toddr.org) | [Download as a PDF](/assets/resume.pdf)
 
 ---
 
