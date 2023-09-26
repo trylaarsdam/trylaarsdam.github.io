@@ -8,23 +8,24 @@ title: Resume
 ---
 
 **Software Skills**
-• Embedded C/C++
-• JavaScript & Node.JS
-*Express.JS, REST APIs*
-• Databases
-*SQL, Firebase, InfluxDB*
-• Google Cloud Platform
-*VMs, Pub/Sub, Cloud Storage*
-• Python
-• Data Visualization
-*Grafana, Vue.JS*
-• CI/CD
-*GitHub & GitLab Actions*
+
+* Embedded C/C++
+* JavaScript & Node.JS
+	* *Express.JS, REST APIs*
+* Databases
+	* *SQL, Firebase, InfluxDB*
+* Google Cloud Platform
+	* *VMs, Pub/Sub, Cloud Storage*
+* Python
+* Data Visualization
+	* *Grafana, Vue.JS*
+* CI/CD
+	* *GitHub & GitLab Actions*
 
 **Hardware Skills**
-• 3D Modeling
-*Solidworks, Onshape*
-• PCB Design (KiCad)
+* 3D Modeling
+	* *Solidworks, Onshape*
+* PCB Design (KiCad)
 
 ## Experience
 Undergraduate Intern, Neurology - Mayo Clinic
@@ -42,7 +43,7 @@ Google Cloud, Grafana, InfluxDB
 
 **Windy City Lab** - Full-Time Software Development Intern
 
-*May 2021 - July 2022, part time from March 2020 - January 2021*
+*May 2021 - July 2022, part-time from March 2020 - January 2021*
 * Delivered prototype and production systems to clients from startups to universities
 	* Argonne National Laboratory: Underground + wireless soil sensors with a 4-year battery life
 	* Northwestern University (Center for Talent Development): Cloud-based DIY CPU Emulator
