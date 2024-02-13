@@ -6,7 +6,34 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://toddr.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://toddr.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sho Baraka Live (Mix Engineer, System Designer)</title>
+      <link>https://toddr.org/productions/sho-baraka/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/sho-baraka/</guid>
+      <description>Completed: 2023-09-20 | George Fox University | Roles: Mix Engineer, System Designer, Master Sound Technician</description>
+    </item>
+    
+    <item>
+      <title>Sense and Sensibility (Mix Engineer, Wireless Systems Tech)</title>
+      <link>https://toddr.org/productions/sense-and-sensibility/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/productions/sense-and-sensibility/</guid>
+      <description>Completed: 2023-09-09 | George Fox University Theater | Roles: Mix Engineer, Wireless Systems Tech, Master Sound Technician</description>
+    </item>
+    
+    <item>
+      <title>Embedded Real-Time Seizure Detection and Forecasting</title>
+      <link>https://toddr.org/projects/mayo-summer-2023/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://toddr.org/projects/mayo-summer-2023/</guid>
+      <description>I spent the summer of 2023 working as an undergraduate intern in neurology at Mayo Clinic. I worked with the Bioengineering Neurophysiology and Engineering Lab (BNEL) to create and deploy an embedded device capable of running seizure detection algorithms in real time. The device was deployed for patient use in the Mayo Clinic Epilepsy Monitoring Unit (EMU) and used to analyze intracranial EEG data being collected in real time from patients.</description>
+    </item>
+    
     <item>
       <title>The Play that Goes Wrong (Asst. Sound Designer)</title>
       <link>https://toddr.org/productions/play-that-goes-wrong/</link>
@@ -178,11 +205,9 @@ The emulator supports up to 32 hardware components that interface with a Particl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://toddr.org/description/</guid>
-      <description>Hi, I&amp;rsquo;m Todd Rylaarsdam, a software developer focused on the internet of things.
-I&amp;rsquo;m currently a student at George Fox University studying computer science.
-This summer I&amp;rsquo;m working with the Mayo Clinic&amp;rsquo;s BNEL lab as an embedded software intern.
-Previously I worked as an embedded software development and hardware engineering intern for a year and a half at Windy City Lab.
-You can find me and my work on GitHub (@trylaarsdam), LinkedIn, and Google Developers (@rylaarsdam).</description>
+      <description>Hi, I&amp;rsquo;m Todd Rylaarsdam, a software developer focused on the Internet of Things.
+I&amp;rsquo;m currently a sophomore at George Fox University studying computer science with a focus on digital electronics, and this summer I&amp;rsquo;ll be working with Microsoft as a Software Engieering Intern.
+In the summer of 2023 I worked with Mayo Clinic&amp;rsquo;s Bioengineering Neurophysiology and Engineering Lab (BNEL), where I created and deployed for patient use an embedded device capable of running seizure detection algorithms in real time, and I am continuing to work with Mayo as a contractor.</description>
     </item>
     
     <item>
@@ -191,8 +216,7 @@ You can find me and my work on GitHub (@trylaarsdam), LinkedIn, and Google Devel
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://toddr.org/about/</guid>
-      <description>I&amp;rsquo;m currently a student at George Fox University studying computer science. Before that I worked as a embedded software development and hardware engineering intern for about a year and a half at Windy City Lab. Most of my personal work is available on GitHub @trylaarsdam, and you can read some more about projects I&amp;rsquo;ve worked on on the projects page.
-For software development, I have experience making apps and backends with JavaScript and Node.</description>
+      <description>I&amp;rsquo;m currently a student at George Fox University studying computer science. This past summer I worked as a neurology intern doing embedded software at Mayo Clinic. Before that, I also worked as an embedded software development and hardware engineering intern for about a year and a half at Windy City Lab. Most of my personal work is available on GitHub @trylaarsdam, and you can read some more about projects I&amp;rsquo;ve worked on on the projects page.</description>
     </item>
     
     <item>
@@ -236,8 +260,12 @@ This Privacy Policy applies only to our online activities and is valid for visit
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://toddr.org/resume/</guid>
-      <description>Todd Rylaarsdam Software Developer, Embedded Hardware Engineer +1 (331) 551-1758 | todd@toddr.org | Download as a PDF
-Skills Javascript/NodeJS - 2 years of full-time professional experience Embedded C/C++ - 2 years of full-time professional experience PCB Design - 1.5 years of full-time professional experience Databases - 2 years of experience with NoSQL databases like Firestore and InfluxDB 3D CAD (Solidworks, Onshape, Inventor) - 1 year of experience Experience Windy City Lab - Full-Time Software Development Intern</description>
+      <description>Todd Rylaarsdam Software Developer, Embedded Hardware Engineer todd@toddr.org | Download as a PDF
+Software Skills
+Embedded C/C++ JavaScript &amp;amp; Node.JS Express.JS, REST APIs Databases SQL, Firebase, InfluxDB Google Cloud Platform VMs, Pub/Sub, Cloud Storage Python Data Visualization Grafana, Vue.JS CI/CD GitHub &amp;amp; GitLab Actions Hardware Skills
+3D Modeling Solidworks, Onshape PCB Design (KiCad) Experience Undergraduate Intern, Neurology - Mayo Clinic
+May 2023 – August 2023
+Designed, created, and deployed to patient use a system to allow EEG implants to interface with an at-edge Tiny-ML capable microcontroller, enabling 24/7 real-time seizure detection and forecasting for patients with epilepsy, whether they were in the hospital, at home, or off-grid and disconnected from the internet.</description>
     </item>
     
     <item>
