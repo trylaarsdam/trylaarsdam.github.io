@@ -270,12 +270,7 @@ This Privacy Policy applies only to our online activities and is valid for visit
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://toddr.org/resume/</guid>
-      <description>Todd Rylaarsdam Software Developer, Embedded Hardware Engineer todd@toddr.org | Download as a PDF
-Software Skills
-Embedded C/C++ JavaScript &amp;amp; Node.JS Express.JS, REST APIs Databases SQL, Firebase, InfluxDB Google Cloud Platform VMs, Pub/Sub, Cloud Storage Python Data Visualization Grafana, Vue.JS CI/CD GitHub &amp;amp; GitLab Actions Hardware Skills
-3D Modeling Solidworks, Onshape PCB Design (KiCad) Experience Undergraduate Intern, Neurology - Mayo Clinic
-May 2023 – August 2023
-Designed, created, and deployed to patient use a system to allow EEG implants to interface with an at-edge Tiny-ML capable microcontroller, enabling 24/7 real-time seizure detection and forecasting for patients with epilepsy, whether they were in the hospital, at home, or off-grid and disconnected from the internet.</description>
+      <description>Todd Rylaarsdam Software Developer, Embedded Hardware Engineer todd@toddr.org | Download as a PDF</description>
     </item>
     
     <item>
