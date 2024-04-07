@@ -1,17 +1,646 @@
-<!doctype html><html lang=en><head><title>Assignment Canvas v2 - Todd Rylaarsdam</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="VueJS, Nginx, NodeJS, ExpressJS, Google Cloud"><style>@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";:root{--cursor-visibility:hidden}html,body{height:97%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400;color:#fff}h1{line-height:6vmin}h2{line-height:5.5vmin}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin;max-width:70vmax}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}.cursor,#activity-title:after,#activity-content:after,#cd:after,#whoami:after,#cat:after,#tree:after{visibility:var(--cursor-visibility);content:"|";overflow:hidden;color:#fff;animation:blink 500ms linear infinite alternate}@keyframes blink{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.8vmin}#content{min-width:60vmin}}section{margin:auto;padding-top:10px}div#sectionleft{margin-right:15px;margin-bottom:10px;padding-left:15px}:root{--cursor-visibility:hidden}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}@keyframes blink{0%{opacity:0}100%{opacity:1}}body{background:#1b1d1e}body #terminal{color:#bbb}body #user{color:#23e298}body #dir{color:#d08010}body .Typewriter__cursor{color:#bbb}a{color:#bbb}.navFull{background-color:#353535;font-family:courier new;font-size:17px;display:inline;position:fixed;bottom:0;left:0;width:100%;padding-top:5px;padding:10px;padding-bottom:0}.navCredits{float:right;padding-right:18px;padding-bottom:10px;padding-top:5px}#content::after{content:"\a\a";white-space:pre}</style></head><body><div id=content><span id=activity-title></span><br><span id=activity-content></span><br><script type=text/javascript>async function typewriter(e,t,n){var s=0,o=!1;addText="";const i=document.getElementById(t),a=()=>new Promise(e=>setTimeout(e,n)),r=()=>new Promise(e=>e()),c=()=>i.innerHTML=e.slice(0,s+1)+addText,l=document.createElement("span");for(l.id="blink",i.style.setProperty("--cursor-visibility","visible");s<e.length;){if(e.charAt(s+1)==="<"&&(o=!0),e.charAt(s+1)===">"&&(o=!1),o){s++;continue}requestAnimationFrame(c),n===0?await r():await a(),s++}i.style.setProperty("--cursor-visibility","collapse")}function parseDelay(e){const t=parseInt(e,10);return isNaN(t)?0:t}const titleDelay=parseDelay("0"),contentDelay=parseDelay("0"),typeeffetct=async()=>{await typewriter("<span id='terminal'><h1 id='title'>Assignment Canvas v2</h1></span>","activity-title",titleDelay),await typewriter(`<span id='terminal'><p>Completed: 2022-07-03 | Personal Project</p>
-<hr>
-<section>
-	<div id="sectionleft"><img style="max-height: 400px; float:left; max-width: 100%; padding-right: 10px; padding-bottom: 10px;" src='/assets/assignment-canvas-v2.png'></div>
-</section>
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Assignment Canvas v2 - Todd Rylaarsdam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="VueJS, Nginx, NodeJS, ExpressJS, Google Cloud" />
+    <style>
+@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";:root{--cursor-visibility:hidden}html,body{height:97%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400;color:#fff}h1{line-height:6vmin}h2{line-height:5.5vmin}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin;max-width:70vmax}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}.cursor,#activity-title:after,#activity-content:after,#cd:after,#whoami:after,#cat:after,#tree:after{visibility:var(--cursor-visibility);content:"|";overflow:hidden;color:#fff;animation:blink 500ms linear infinite alternate}@keyframes blink{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.8vmin}#content{min-width:60vmin}}section{margin:auto;padding-top:10px}div#sectionleft{margin-right:15px;margin-bottom:10px;padding-left:15px}:root{--cursor-visibility:hidden}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}@keyframes blink{0%{opacity:0}100%{opacity:1}}
 
-<!-- raw HTML omitted -->
-<p>This is a version 2 of the old Assignment Canvas I built back in 2021 (<a href="/projects/assignment-canvas-v1">learn more about that here</a>). This new and improved version adds a bunch of stuff the old one didn&rsquo;t have, like viewing assignments in detail, external linking to Canvas, an easier setup process, and a new responsive UI. You can give it a try at <a href="https://canvas.toddr.org">canvas.toddr.org</a></p>
-<p>I also made an Android app using Kotlin and Jetpack Compose that interacts with the Assignment Canvas API to let you view your account and feed from your phone. You can find it <a href="https://play.google.com/store/apps/details?id=com.trylaarsdam.assignmentcanvas">for free on the play store</a>.</p>
-<p>Assignment Canvas v2 (<a href="https://github.com/trylaarsdam/assignment-canvas">trylaarsdam/assignment-canvas</a>) is built using VueJS 2 on the frontend, and an ExpressJS API for the backend. I went with Vue due to some earlier experience I had with it from my work at <a href="https://thewcl.com">Windy City Lab</a>, and really loved how it managed state and routing. The new frontend is much prettier than the old one which was built using vanilla HTML and no UI framework whatsoever, and is now (mostly) compliant with Material Design.</p>
-<p>The Express backend (<a href="https://github.com/trylaarsdam/canvasapiinterface">trylaarsdam/canvasApiInterface</a>) is what actually reads the database to retreive user keys and such to access Canvas. I decided that it would be easiest and most secure if the frontend didn&rsquo;t need to access Canvas directly, and I could abstract that away underneath my own API which would be fine tuned for what I needed it to do.</p>
-<p>Overall the initial development time of this project took around 1-2 months of on and off work, but Assignment Canvas will (probably) continue to be developed on throughout my 4 years at George Fox University.</p>
-</span>`,"activity-content",contentDelay)};typeeffetct()</script></div><span class=navFull><span><a href=/>Home</a>
-<span>&#8192;|&#8192;</span>
-<a href=./..>/projects/</a></span>
-<span class=navCredits>© 2023 Todd Rylaarsdam.
-<a href=/legal>Legal</a></span></span></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
+
+        
+.navFull {
+    background-color: #353535;
+    font-family: "Courier New";
+    font-size: 17px;
+    display: inline;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navCredits {
+    float: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#content::after {
+    content: "\a\a";
+    white-space: pre;
+}
+        
+        
+</style>
+
+
+
+</head><body><div id="content">
+    
+    
+    
+
+    <span id="activity-title"></span> <br>
+ <span id="activity-content"></span> <br>
+
+<script type="text/javascript">
+    async function typewriter(text, elementId, waitAfter) {
+        var n = 0,
+            isTag = false
+        addText = "";
+        const el = document.getElementById(elementId);
+
+        const wait = () => new Promise(r => setTimeout(r, waitAfter));
+        const nowait = () => new Promise(r => r());
+
+        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
+
+        const cursor = document.createElement('span');
+        cursor.id = "blink";
+
+        el.style.setProperty("--cursor-visibility", "visible");
+        while (n < text.length) {
+            if (text.charAt(n + 1) === "<") isTag = true;
+            if (text.charAt(n + 1) === ">") isTag = false;
+
+            if (isTag) {
+                n++;
+                continue;
+            }
+
+            requestAnimationFrame(render);
+
+            if (waitAfter === 0) {
+                await nowait();
+            } else {
+                await wait();
+            }
+
+            n++;
+        }
+        el.style.setProperty("--cursor-visibility", "collapse");
+    }
+
+    function parseDelay(d) {
+        const parsed = parseInt(d, 10);
+        if (isNaN(parsed)) return 0;
+        return parsed;
+    }
+
+    const titleDelay = parseDelay("0"),
+        contentDelay = parseDelay("0");
+    const typeeffetct = async () => {
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0027title\u0027\u003eAssignment Canvas v2\u003c\/h1\u003e\u003c\/span\u003e", "activity-title", titleDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cp\u003eCompleted: 2022-07-03 | Personal Project\u003c\/p\u003e\n\u003chr\u003e\n\u003csection\u003e\r\n\t\u003cdiv id=\u0022sectionleft\u0022\u003e\u003cimg style=\u0022max-height: 400px; float:left; max-width: 100%; padding-right: 10px; padding-bottom: 10px;\u0022 src=\u0027\/assets\/assignment-canvas-v2.png\u0027\u003e\u003c\/div\u003e\r\n\u003c\/section\u003e\r\n\n\u003c!-- raw HTML omitted --\u003e\n\u003cp\u003eThis is a version 2 of the old Assignment Canvas I built back in 2021 (\u003ca href=\u0022\/projects\/assignment-canvas-v1\u0022\u003elearn more about that here\u003c\/a\u003e). This new and improved version adds a bunch of stuff the old one didn\u0026rsquo;t have, like viewing assignments in detail, external linking to Canvas, an easier setup process, and a new responsive UI. You can give it a try at \u003ca href=\u0022https:\/\/canvas.toddr.org\u0022\u003ecanvas.toddr.org\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003eI also made an Android app using Kotlin and Jetpack Compose that interacts with the Assignment Canvas API to let you view your account and feed from your phone. You can find it \u003ca href=\u0022https:\/\/play.google.com\/store\/apps\/details?id=com.trylaarsdam.assignmentcanvas\u0022\u003efor free on the play store\u003c\/a\u003e.\u003c\/p\u003e\n\u003cp\u003eAssignment Canvas v2 (\u003ca href=\u0022https:\/\/github.com\/trylaarsdam\/assignment-canvas\u0022\u003etrylaarsdam\/assignment-canvas\u003c\/a\u003e) is built using VueJS 2 on the frontend, and an ExpressJS API for the backend. I went with Vue due to some earlier experience I had with it from my work at \u003ca href=\u0022https:\/\/thewcl.com\u0022\u003eWindy City Lab\u003c\/a\u003e, and really loved how it managed state and routing. The new frontend is much prettier than the old one which was built using vanilla HTML and no UI framework whatsoever, and is now (mostly) compliant with Material Design.\u003c\/p\u003e\n\u003cp\u003eThe Express backend (\u003ca href=\u0022https:\/\/github.com\/trylaarsdam\/canvasapiinterface\u0022\u003etrylaarsdam\/canvasApiInterface\u003c\/a\u003e) is what actually reads the database to retreive user keys and such to access Canvas. I decided that it would be easiest and most secure if the frontend didn\u0026rsquo;t need to access Canvas directly, and I could abstract that away underneath my own API which would be fine tuned for what I needed it to do.\u003c\/p\u003e\n\u003cp\u003eOverall the initial development time of this project took around 1-2 months of on and off work, but Assignment Canvas will (probably) continue to be developed on throughout my 4 years at George Fox University.\u003c\/p\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);
+        return;
+    }
+
+    typeeffetct()
+</script>
+
+
+        </div>
+        
+        <span class="navFull">
+        
+    
+    
+
+    
+        
+
+<span>
+    <a href="/">Home</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="./..">/projects/</a>
+</span>
+
+    
+
+        
+        <span class="navCredits">
+            © 2023 Todd Rylaarsdam. 
+            <a href="/legal">Legal</a>
+        </span>
+</span>
+
+        
+         
+    </body>
+</html>

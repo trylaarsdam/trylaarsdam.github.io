@@ -1,20 +1,646 @@
-<!doctype html><html lang=en><head><title>CPU Emulator - Todd Rylaarsdam</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Python, ElectronJS, MQTT, Particle MCUs, Flutter"><style>@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";:root{--cursor-visibility:hidden}html,body{height:97%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400;color:#fff}h1{line-height:6vmin}h2{line-height:5.5vmin}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin;max-width:70vmax}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}.cursor,#activity-title:after,#activity-content:after,#cd:after,#whoami:after,#cat:after,#tree:after{visibility:var(--cursor-visibility);content:"|";overflow:hidden;color:#fff;animation:blink 500ms linear infinite alternate}@keyframes blink{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.8vmin}#content{min-width:60vmin}}section{margin:auto;padding-top:10px}div#sectionleft{margin-right:15px;margin-bottom:10px;padding-left:15px}:root{--cursor-visibility:hidden}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}@keyframes blink{0%{opacity:0}100%{opacity:1}}body{background:#1b1d1e}body #terminal{color:#bbb}body #user{color:#23e298}body #dir{color:#d08010}body .Typewriter__cursor{color:#bbb}a{color:#bbb}.navFull{background-color:#353535;font-family:courier new;font-size:17px;display:inline;position:fixed;bottom:0;left:0;width:100%;padding-top:5px;padding:10px;padding-bottom:0}.navCredits{float:right;padding-right:18px;padding-bottom:10px;padding-top:5px}#content::after{content:"\a\a";white-space:pre}</style></head><body><div id=content><span id=activity-title></span><br><span id=activity-content></span><br><script type=text/javascript>async function typewriter(e,t,n){var s=0,o=!1;addText="";const i=document.getElementById(t),a=()=>new Promise(e=>setTimeout(e,n)),r=()=>new Promise(e=>e()),c=()=>i.innerHTML=e.slice(0,s+1)+addText,l=document.createElement("span");for(l.id="blink",i.style.setProperty("--cursor-visibility","visible");s<e.length;){if(e.charAt(s+1)==="<"&&(o=!0),e.charAt(s+1)===">"&&(o=!1),o){s++;continue}requestAnimationFrame(c),n===0?await r():await a(),s++}i.style.setProperty("--cursor-visibility","collapse")}function parseDelay(e){const t=parseInt(e,10);return isNaN(t)?0:t}const titleDelay=parseDelay("0"),contentDelay=parseDelay("0"),typeeffetct=async()=>{await typewriter("<span id='terminal'><h1 id='title'>CPU Emulator</h1></span>","activity-title",titleDelay),await typewriter(`<span id='terminal'><p>Completed: 2020-07-20 | Employer: Windy City Lab</p>
-<hr>
-<section>
-	<div id="sectionleft"><img style="max-height: 400px; float:left; max-width: 100%; padding-right: 10px; padding-bottom: 10px;" src='/assets/cpu.jpg'></div>
-</section>
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>CPU Emulator - Todd Rylaarsdam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Python, ElectronJS, MQTT, Particle MCUs, Flutter" />
+    <style>
+@import "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap";:root{--cursor-visibility:hidden}html,body{height:97%;overflow:auto;font-family:inconsolata,monospace;font-size:4vmin;line-height:4.1vmin;font-weight:400;color:#fff}h1{line-height:6vmin}h2{line-height:5.5vmin}body{margin:0;display:flex;flex-direction:row;justify-content:center;align-items:center}#content{min-width:82vmin;min-height:82vmin;max-width:70vmax}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{border-radius:10px;box-shadow:inset 0 0 1px white}::-webkit-scrollbar-thumb{border-radius:10px;box-shadow:0 0 0 1px white}.cursor,#activity-title:after,#activity-content:after,#cd:after,#whoami:after,#cat:after,#tree:after{visibility:var(--cursor-visibility);content:"|";overflow:hidden;color:#fff;animation:blink 500ms linear infinite alternate}@keyframes blink{0%{opacity:0}100%{opacity:1}}@media only screen and (min-width:768px){body{font-size:2.5vmin;line-height:2.8vmin}#content{min-width:60vmin}}section{margin:auto;padding-top:10px}div#sectionleft{margin-right:15px;margin-bottom:10px;padding-left:15px}:root{--cursor-visibility:hidden}body{align-items:unset;overflow-y:scroll}#content{max-width:80vmin}pre{overflow-x:scroll;white-space:pre}@keyframes blink{0%{opacity:0}100%{opacity:1}}
 
-<p>Capable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.</p>
-<p>The emulator supports up to 32 hardware components that interface with a Particle microcontroller over a custom PCB. Components can be built by hand on a breadboard, or made on custom PCBs.</p>
-<p>Unlimited virtual components are emulated according to the user&rsquo;s specifications. They can communicate OTA with hardware components on your desk, and read values from the entire network of your CPU.</p>
-<p>A V2 version branded as NAND7400 is coming soon at <a href="https://nand7400.com">nand7400.com</a>. This version features hardware RAM support (before RAM was emulated using a microcontroller), as well as new PCB designs and an iOS app to control the entire system.</p>
-<h2 id="making-this-project">Making this project</h2>
-<p>The CPU Emualtor is really more than just an emulator. It&rsquo;s an entire suite of tools that can be used to create partially emulated and partially DIY CPUs. The emulator itself is a python app with a simple Electron frontend. Users can define their own instruction set, architecture, CPU components, microcode, and more. All of this is done in a few easy to edit JSON files.</p>
-<p>While the CPU can emulate the entirety of a program, it can also link to a custom PCB with a Particle Photon on it to allow a user to build some of the components of their CPU on a breadboard on their desk. When physical components are present, the Emulator does not emulate those components, and instead simulates the inputs of other components to the physical componets, and then reads the outputs of the physical components and integrates them into the emulated system.</p>
-<p>Basically, if you&rsquo;ve made a mistake in your hardware design, or have tweaked it to do something a little different, that will be reflected on your computer screen.</p>
-<p>Overall, this project probably took 4 months to create.</p>
-</span>`,"activity-content",contentDelay)};typeeffetct()</script></div><span class=navFull><span><a href=/>Home</a>
-<span>&#8192;|&#8192;</span>
-<a href=./..>/projects/</a></span>
-<span class=navCredits>© 2023 Todd Rylaarsdam.
-<a href=/legal>Legal</a></span></span></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
+
+        
+.navFull {
+    background-color: #353535;
+    font-family: "Courier New";
+    font-size: 17px;
+    display: inline;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navCredits {
+    float: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#content::after {
+    content: "\a\a";
+    white-space: pre;
+}
+        
+        
+</style>
+
+
+
+</head><body><div id="content">
+    
+    
+    
+
+    <span id="activity-title"></span> <br>
+ <span id="activity-content"></span> <br>
+
+<script type="text/javascript">
+    async function typewriter(text, elementId, waitAfter) {
+        var n = 0,
+            isTag = false
+        addText = "";
+        const el = document.getElementById(elementId);
+
+        const wait = () => new Promise(r => setTimeout(r, waitAfter));
+        const nowait = () => new Promise(r => r());
+
+        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
+
+        const cursor = document.createElement('span');
+        cursor.id = "blink";
+
+        el.style.setProperty("--cursor-visibility", "visible");
+        while (n < text.length) {
+            if (text.charAt(n + 1) === "<") isTag = true;
+            if (text.charAt(n + 1) === ">") isTag = false;
+
+            if (isTag) {
+                n++;
+                continue;
+            }
+
+            requestAnimationFrame(render);
+
+            if (waitAfter === 0) {
+                await nowait();
+            } else {
+                await wait();
+            }
+
+            n++;
+        }
+        el.style.setProperty("--cursor-visibility", "collapse");
+    }
+
+    function parseDelay(d) {
+        const parsed = parseInt(d, 10);
+        if (isNaN(parsed)) return 0;
+        return parsed;
+    }
+
+    const titleDelay = parseDelay("0"),
+        contentDelay = parseDelay("0");
+    const typeeffetct = async () => {
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003ch1 id=\u0027title\u0027\u003eCPU Emulator\u003c\/h1\u003e\u003c\/span\u003e", "activity-title", titleDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cp\u003eCompleted: 2020-07-20 | Employer: Windy City Lab\u003c\/p\u003e\n\u003chr\u003e\n\u003csection\u003e\r\n\t\u003cdiv id=\u0022sectionleft\u0022\u003e\u003cimg style=\u0022max-height: 400px; float:left; max-width: 100%; padding-right: 10px; padding-bottom: 10px;\u0022 src=\u0027\/assets\/cpu.jpg\u0027\u003e\u003c\/div\u003e\r\n\u003c\/section\u003e\r\n\n\u003cp\u003eCapable of powering 32 physical and unlimited virtual CPU components, and creating a network-based 8 or 16 bit CPU. Using a combination of custom PCBs and breadboards as well as the Emulator, you can create your own custom CPU right on your desk.\u003c\/p\u003e\n\u003cp\u003eThe emulator supports up to 32 hardware components that interface with a Particle microcontroller over a custom PCB. Components can be built by hand on a breadboard, or made on custom PCBs.\u003c\/p\u003e\n\u003cp\u003eUnlimited virtual components are emulated according to the user\u0026rsquo;s specifications. They can communicate OTA with hardware components on your desk, and read values from the entire network of your CPU.\u003c\/p\u003e\n\u003cp\u003eA V2 version branded as NAND7400 is coming soon at \u003ca href=\u0022https:\/\/nand7400.com\u0022\u003enand7400.com\u003c\/a\u003e. This version features hardware RAM support (before RAM was emulated using a microcontroller), as well as new PCB designs and an iOS app to control the entire system.\u003c\/p\u003e\n\u003ch2 id=\u0022making-this-project\u0022\u003eMaking this project\u003c\/h2\u003e\n\u003cp\u003eThe CPU Emualtor is really more than just an emulator. It\u0026rsquo;s an entire suite of tools that can be used to create partially emulated and partially DIY CPUs. The emulator itself is a python app with a simple Electron frontend. Users can define their own instruction set, architecture, CPU components, microcode, and more. All of this is done in a few easy to edit JSON files.\u003c\/p\u003e\n\u003cp\u003eWhile the CPU can emulate the entirety of a program, it can also link to a custom PCB with a Particle Photon on it to allow a user to build some of the components of their CPU on a breadboard on their desk. When physical components are present, the Emulator does not emulate those components, and instead simulates the inputs of other components to the physical componets, and then reads the outputs of the physical components and integrates them into the emulated system.\u003c\/p\u003e\n\u003cp\u003eBasically, if you\u0026rsquo;ve made a mistake in your hardware design, or have tweaked it to do something a little different, that will be reflected on your computer screen.\u003c\/p\u003e\n\u003cp\u003eOverall, this project probably took 4 months to create.\u003c\/p\u003e\n\u003c\/span\u003e", "activity-content", contentDelay);
+        return;
+    }
+
+    typeeffetct()
+</script>
+
+
+        </div>
+        
+        <span class="navFull">
+        
+    
+    
+
+    
+        
+
+<span>
+    <a href="/">Home</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="./..">/projects/</a>
+</span>
+
+    
+
+        
+        <span class="navCredits">
+            © 2023 Todd Rylaarsdam. 
+            <a href="/legal">Legal</a>
+        </span>
+</span>
+
+        
+         
+    </body>
+</html>
