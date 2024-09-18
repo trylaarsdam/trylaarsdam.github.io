@@ -1,8 +1,11 @@
 Hi, I'm Todd Rylaarsdam, a software developer focused on the Internet of Things.
 
-I'm currently a sophomore at George Fox University studying computer science with a focus on digital electronics, and this summer I'll be working with Microsoft as a Software Engieering Intern.
+I'm currently a junior at George Fox University studying computer science with a focus on digital electronics, and this summer I'll be returning to Microsoft as a Software Engieering Intern.
 
-In the summer of 2023 I worked with Mayo Clinic's Bioengineering Neurophysiology and Engineering Lab (BNEL), where I [created and deployed for patient use an embedded device capable of running seizure detection algorithms in real time](/projects/mayo-summer-2023), and I am continuing to work with Mayo as a contractor.
+Last summer I worked with the Excel team at Microsoft to significantly reduce forced workbook reloads when editing workbooks
+with other users by implementing client-side merge conflict resolution.
+
+I've also worked with Mayo Clinic's Bioengineering Neurophysiology and Engineering Lab (BNEL), where I [created and deployed for patient use an embedded device capable of running seizure detection algorithms in real time](/projects/mayo-summer-2023), and I am continuing to work with Mayo as a contractor.
 
 Previously I worked as a full-time embedded software development and hardware engineering intern for a year and a half at Windy City Lab.
 
