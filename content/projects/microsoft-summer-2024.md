@@ -6,6 +6,7 @@ author:
 description: C++, Various Internal Debugging & Session Investigation Tools
 ---
 Completed: 2024-07-25 | Employer: Microsoft
+
 ---
 
 In the summer of 2024 I worked with the Excel Coauthoring team at Microsoft as a Software Engineering Intern.
