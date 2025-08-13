@@ -60,7 +60,6 @@ enableInlineShortcodes = true
   files = [ 
     ["Resume", "/assets/resume.pdf"],
     ["Projects", "/projects"],
-    ["Dev Blog", "https://dev.toddr.org"],
     ["About Me", "/about"],
     ["Audio Production", "/productions"],
     ["Contact Me", "/contact"],
