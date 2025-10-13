@@ -1,6 +1,6 @@
 Hi, I'm Todd Rylaarsdam, a software developer focused on the Internet of Things.
 
-I'm currently a senior at George Fox University studying computer science with a focus on digital electronics, and this summer I'm working at Microsoft as a Software Engieering Intern working on Excel.
+I'm currently a senior at George Fox University studying computer science with a focus on digital electronics, and next year I'm joining Microsoft's Excel team as a software engineer.
 
 Last summer I also worked with the Excel team at Microsoft to significantly reduce forced workbook reloads when editing workbooks
 with other users by implementing client-side merge conflict resolution.
