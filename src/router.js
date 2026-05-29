@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './pages/HomePage.vue'
+import LegalPage from './pages/LegalPage.vue'
+import NotFoundPage from './pages/NotFoundPage.vue'
 import ProjectDetailPage from './pages/ProjectDetailPage.vue'
 import ResumePage from './pages/ResumePage.vue'
 
@@ -15,9 +17,19 @@ const routes = [
     component: ResumePage,
   },
   {
+    path: '/legal',
+    name: 'legal',
+    component: LegalPage,
+  },
+  {
     path: '/project/:slug',
     name: 'project-detail',
     component: ProjectDetailPage,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundPage,
   },
 ]
 

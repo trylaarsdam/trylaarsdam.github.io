@@ -26,6 +26,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -78,6 +84,13 @@ a {
 .app-shell {
   position: relative;
   z-index: 0;
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+}
+
+.app-shell main {
+  flex: 1;
 }
 
 .site-header {
@@ -314,7 +327,8 @@ a {
 .intro-band,
 .project-section,
 .contact-section,
-.resume-page {
+.resume-page,
+.content-page {
   padding: 5rem 0;
 }
 
@@ -568,18 +582,61 @@ a {
 }
 
 .resume-page h1,
-.project-detail-copy h1 {
+.project-detail-copy h1,
+.content-page h1 {
   margin: 0.25rem 0 0;
   font-size: clamp(3rem, 7vw, 5rem);
   line-height: 0.92;
 }
 
-.resume-page {
+.resume-page,
+.content-page {
   width: min(1180px, calc(100vw - 2rem));
 }
 
-.resume-heading {
+.resume-heading,
+.content-page-heading {
   margin-bottom: 1rem;
+}
+
+.content-page {
+  padding-top: 8rem;
+  min-height: 72svh;
+}
+
+.content-page-lede,
+.not-found-panel p {
+  max-width: 44rem;
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+}
+
+.content-panel,
+.not-found-panel {
+  padding: 1.6rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.content-panel h2,
+.not-found-panel h1 {
+  margin-top: 0;
+}
+
+.content-panel a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.not-found-page {
+  display: grid;
+  align-items: center;
+}
+
+.not-found-panel {
+  max-width: 720px;
 }
 
 .resume-frame {

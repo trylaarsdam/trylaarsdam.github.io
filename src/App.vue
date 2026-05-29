@@ -18,7 +18,10 @@ import { site } from './data/content'
         </div>
         <div>
           <p class="eyebrow">Resources</p>
-          <RouterLink class="footer-link" to="/resume">Resume</RouterLink>
+          <div class="footer-links">
+            <RouterLink class="footer-link" to="/resume">Resume</RouterLink>
+            <RouterLink class="footer-link" to="/legal">Legal</RouterLink>
+          </div>
         </div>
         <div>
           <p class="eyebrow">Socials</p>
