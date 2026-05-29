@@ -36,6 +36,7 @@ function toggleMobileSection(sectionId) {
       </RouterLink>
 
       <nav class="site-nav" aria-label="Primary navigation">
+        <RouterLink :class="['nav-link', { active: route.path === '/about' }]" to="/about">About</RouterLink>
         <RouterLink :class="['nav-link', { active: route.path === '/resume' }]" to="/resume">Resume</RouterLink>
         <a class="nav-link nav-link-cta" href="/#contact">Contact</a>
       </nav>
@@ -58,6 +59,7 @@ function toggleMobileSection(sectionId) {
       <nav v-if="menuOpen" id="mobile-menu" class="mobile-menu shell" aria-label="Mobile navigation">
         <div class="mobile-menu-primary">
           <RouterLink :class="['mobile-link', { active: route.path === '/' }]" to="/" @click="closeMenu">Home</RouterLink>
+          <RouterLink :class="['mobile-link', { active: route.path === '/about' }]" to="/about" @click="closeMenu">About</RouterLink>
           <RouterLink :class="['mobile-link', { active: route.path === '/resume' }]" to="/resume" @click="closeMenu">Resume</RouterLink>
           <a class="mobile-link mobile-link-cta" href="/#contact" @click="closeMenu">Contact</a>
         </div>

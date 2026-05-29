@@ -262,13 +262,55 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2026',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Sound designer and mix engineer',
+        role: 'Sound Designer, Mix Engineer',
         summary:
-          'A large-scale production where the mix, scene pacing, and pit communication all needed to stay invisible to the audience.',
+          '32 body mics, an 11 member pit orchestra, and 14 speakers combined to support the huge scale of this production, all in a 235 seat house.',
         homeImages: productionGallery.hunchback,
         projectImages: productionGallery.hunchback,
         highlights: ['Mix design', 'Pit communication', 'Large ensemble'],
-        markdown: 'test',
+        markdown: `
+# Awards
+* American College Theatre Festival Region 7 - Meritorious Achievement Award in Sound Design
+* George Fox University - Exceptional Student Design Award
+
+# Equipment Highlights
+* 31 body mics - 16 channels of EW-DX and 15 channels of ew100 G4
+* A&H SQ5 and Qu16 mixers
+  * SQ5 used as primary mixer, Qu16 completely automated through QLab and MIDI to send various ensemble & solo actor mixes as needed
+* 6x QSC CP12 (Stereo Wide + Stereo Center), 2x QSC KLA 181 Subs, 4x JBL Control 25-T (front fill)
+* 11 member pit orchestra - 22 input channels
+* 6 musician IEM mixes and onstage/offstage monitoring for cast
+* NDI feeds to dressing rooms to minimize backstage crowding
+* Analog video monitoring (stage feeds, MD view, scenic automation safety angles) available throughout the venue.
+
+# Creative Team
+* Director – Ben Tissell
+* Music Director – Wendy Vece
+* Choreographer & Associate Director – Dylan Macabitas
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Laurel Peterson
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Todd Rylaarsdam
+* Properties Artist – Victoria Rhodes
+* Hair and Makeup Artist – Paige Hampton
+* Dramaturg – Ellie Heerwagen
+
+# System Design & Paperwork
+### Mic Plot
+<object data="/text_resources/Hunchback-Mic-Plot.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="/text_resources/Hunchback-Mic-Plot.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/text_resources/Hunchback-Mic-Plot.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+### Sound System Design
+
+<object data="/text_resources/Hunchback-Sound-System.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="/text_resources/Hunchback-Sound-System.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/text_resources/Hunchback-Sound-System.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+`,
       },
       {
         id: 'project-comedy-of-errors',
@@ -276,7 +318,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2025',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Sound designer and mix engineer',
+        role: 'Sound Designer, Mix Engineer',
         summary:
           'A production that paired crisp cueing with a quick, lively mix to support the pace of the comedy.',
         homeImages: productionGallery.comedy,
@@ -289,7 +331,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2025',
         venue: 'Broadway Rose Theatre Company',
         client: 'Broadway Rose Theatre Company',
-        role: 'Mix engineer 2',
+        role: 'Mix Engineer 2',
         summary:
           'Supporting a polished musical with musical clarity, confidence in transitions, and a compact show workflow.',
         homeImages: productionGallery.anythingGoes,
@@ -302,7 +344,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2025',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Sound designer, mix engineer, and LED pixel system design',
+        role: 'Sound Designer, Mix Engineer, and LED Pixel System Design',
         summary:
           'A production combining sound and show tech, with emphasis on timing, energy, and integrated design.',
         homeImages: productionGallery.footloose,
@@ -315,7 +357,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2024',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Sound designer and mix engineer',
+        role: 'Sound Designer, Mix Engineer',
         summary:
           'An intimate, textural production with space for detail in the mix and a warm scenic atmosphere.',
         homeImages: productionGallery.brightStar,
@@ -328,7 +370,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2024',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Sound designer and mix engineer',
+        role: 'Sound Designer, Mix Engineer',
         summary:
           'A classic production handled with clear line delivery, ensemble definition, and a stable mix foundation.',
         homeImages: productionGallery.pirates,
@@ -341,7 +383,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2024',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Assistant sound designer and master sound technician',
+        role: 'Assistant Sound Designer and Master Sound Technician',
         summary:
           'A production emphasizing dependable infrastructure, show support, and careful execution behind the scenes.',
         homeImages: productionGallery.hidingPlace,
@@ -354,7 +396,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2023',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Mix engineer',
+        role: 'Mix Engineer',
         summary:
           'A refined stage production with a focus on consistent levels, intelligible text, and a balanced ensemble sound.',
         homeImages: productionGallery.senseAndSensibility,
@@ -367,26 +409,13 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         year: '2023',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
-        role: 'Assistant sound designer',
+        role: 'Assistant Sound Designer',
         summary:
           'A technically playful show that rewarded disciplined timing and dependable cues under pressure.',
         homeImages: productionGallery.playThatGoesWrong,
         projectImages: productionGallery.playThatGoesWrong,
         highlights: ['Cue timing', 'Reliability', 'Fast pacing'],
-      },
-      {
-        id: 'project-the-potting-shed',
-        title: 'The Potting Shed',
-        year: '2023',
-        venue: 'George Fox University Theatre',
-        client: 'George Fox University Theatre',
-        role: 'Master sound technician',
-        summary:
-          'An early production credit that reinforced good backstage systems and a calm, methodical working style.',
-        homeImages: productionGallery.pottingShed,
-        projectImages: productionGallery.pottingShed,
-        highlights: ['Stage support', 'Methodical workflow', 'Stable execution'],
-      },
+      }
     ],
   },
 ]

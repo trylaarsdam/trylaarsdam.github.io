@@ -4,12 +4,18 @@ import LegalPage from './pages/LegalPage.vue'
 import NotFoundPage from './pages/NotFoundPage.vue'
 import ProjectDetailPage from './pages/ProjectDetailPage.vue'
 import ResumePage from './pages/ResumePage.vue'
+import AboutPage from './pages/AboutPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomePage,
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutPage,
   },
   {
     path: '/resume',

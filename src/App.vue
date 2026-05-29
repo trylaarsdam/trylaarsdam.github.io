@@ -19,6 +19,7 @@ import { site } from './data/content'
         <div>
           <p class="eyebrow">Resources</p>
           <div class="footer-links">
+            <RouterLink class="footer-link" to="/about">About</RouterLink>
             <RouterLink class="footer-link" to="/resume">Resume</RouterLink>
             <RouterLink class="footer-link" to="/legal">Legal</RouterLink>
           </div>
