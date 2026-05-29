@@ -43,6 +43,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+          expires-in: 10m
 
   deploy:
     environment:
