@@ -271,7 +271,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         markdown: `
 # Awards
 * American College Theatre Festival Region 7 - Meritorious Achievement Award in Sound Design
-* George Fox University - Exceptional Student Design Award
+* George Fox University - Outstanding Student Design Award
 
 # Equipment Highlights
 * 31 body mics - 16 channels of EW-DX and 15 channels of ew100 G4
@@ -323,6 +323,24 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.comedy,
         projectImages: productionGallery.comedy,
+        markdown: `
+# Equipment Highlights
+* 16 channels of Sennheiser EW-DX wireless packs + 8 channels of Sennheiser ew100 G4
+* A&H SQ5 mixer
+* 6x QSC CP12 placed around the amphitheatre
+* Daily load in/load out for a 2 week run
+  * Also designed a system for an indoor run in the case of rain
+
+# Creative Team
+* Director – Andy Christensen
+* Associate Director – Anna Rajala
+* Assistant Director – Ellie Heerwagen
+* Technical Director – Emma Boyd
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Todd Rylaarsdam
+`
       },
       {
         id: 'project-anything-goes',
@@ -335,6 +353,15 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.anythingGoes,
         projectImages: productionGallery.anythingGoes,
+        markdown: `
+# Creative Team
+* Director and Choreographer – Peggy Taphorn
+* Music Director – Barney Stein
+* Costumes Design Supervisor – Debbie Bray
+* Lighting Designer – Kristeen Willis
+* Props Designer – Sam Manilla
+* Sound Designer – Brian Karl Moen
+`
       },
       {
         id: 'project-footloose',
@@ -347,6 +374,27 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.footloose,
         projectImages: productionGallery.footloose,
+        markdown: `
+# Awards
+* George Fox University - Outstanding Student Design Award
+# Equipment Highlights
+* 24 channels of ew100 G4 all in A band - quite the wireless coordination exercise
+* A&H SQ5 mixer
+* Custom LED pixel system with over 75000 individually addressable pixels, pixel mapped in Resolume and controlled via timecode from QLab
+* Custom click tracks for some show numbers, sent to musicians via in-ear monitors
+  * A TV-based cue system for actors to cue them into songs where a click track was in use but no music was being played.
+# Creative Team
+* Director – Ben Tissell
+* Assistant Director – Shianna Deck-Ugelstad
+* Music Director – Wendy Vece
+* Choreographer – Dylan Anthony Macabitas
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Todd Rylaarsdam
+* Properties Artist – Atalia Fisher
+* Hair and Makeup Artist – Paige Hampton
+        `
       },
       {
         id: 'project-bright-star',
@@ -359,6 +407,28 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.brightStar,
         projectImages: productionGallery.brightStar,
+        markdown: `
+# Awards
+* American College Theatre Festival Region 7 - Meritorious Achievement Award in Sound Design
+* George Fox University Theatre - Outstanding Student Design Award
+
+# Equipment & Orchestra
+* 21 body mics - Countryman B3 on Sennheiser ew100 G4/G3/G2
+* Allen & Heath SQ5
+* Pit Orchestra: Drums/Percussion, Piano, Acoustic/Electric Guitar, Banjo/Mandolin, Fiddle, Upright Bass
+
+# Creative Team
+* Director – Ben Tissell
+* Associate Director – Maya Van Aken
+* Music Director – Danielle Warner
+* Choreographer – Melody Wells-Benitez
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Todd Rylaarsdam
+* Properties Manager – Mack Goodsel
+* Hair and Makeup Artist – Paige Hampton
+        `
       },
       {
         id: 'project-the-pirates-of-penzance',
@@ -371,6 +441,23 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.pirates,
         projectImages: productionGallery.pirates,
+        markdown: `
+Designed and led the implementation of a new outdoor sound system for the amphitheatre at George Fox University, which debuted with this production. The system was designed to be flexible for both outdoor and indoor use, and to provide clear, even coverage throughout the amphitheatre using 6 QSC CP12 in three layers (front center, front side, and back). Overall the system was a huge success with plenty of headroom, minimal noise on stage, and clear sound throughout the venue.
+
+# Equipment
+Allen & Heath SQ5
+6x QSC CP12s spread around the venue
+Pit Orchestra: Piano, Clarinet, Flute
+Video monitoring system - conductor feed for actors
+
+# Creative Team
+* Director – Ben Tissell
+* Music Director - Danielle Warner
+* Scenic Designer – Emma Boyd
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Todd Rylaarsdam
+        `
       },
       {
         id: 'project-the-hiding-place',
@@ -383,6 +470,17 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.hidingPlace,
         projectImages: productionGallery.hidingPlace,
+        markdown: `
+# Creative Team
+* Director – Cycerli Ash
+* Scenic Designer – Alex Meyer
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Cycerli Ash
+* Assistant Sound Designer – Todd Rylaarsdam
+* Properties Artist – Atalia Fisher
+* Hair and Makeup Artist – Maddie Maulding
+        `
       },
       {
         id: 'project-sense-and-sensibility',
@@ -395,6 +493,14 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.senseAndSensibility,
         projectImages: productionGallery.senseAndSensibility,
+        markdown: `
+# Creative Team
+* Director – Ben Tissell
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Brian Moen
+`
       },
       {
         id: 'project-the-play-that-goes-wrong',
@@ -407,6 +513,18 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
           '',
         homeImages: productionGallery.playThatGoesWrong,
         projectImages: productionGallery.playThatGoesWrong,
+        markdown: `
+# Creative Team
+* Director – JeanneAnn Comiskey
+* Scenic Designer – Marley Ross
+* Costume Designer – Taylor Young
+* Lighting Designer – Kacy Hughson
+* Assistant Lighting Designer – Emelia Corazza
+* Sound Designer – El Maciel
+* Assistant Sound Designer – Todd Rylaarsdam
+* Properties Artist – Rebecca Jiron
+* Hair and Makeup Artist – Marin Donohue
+        `
       }
     ],
   },
