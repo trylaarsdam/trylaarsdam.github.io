@@ -320,10 +320,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Sound Designer, Mix Engineer',
         summary:
-          'A production that paired crisp cueing with a quick, lively mix to support the pace of the comedy.',
+          '',
         homeImages: productionGallery.comedy,
         projectImages: productionGallery.comedy,
-        highlights: ['Cue accuracy', 'Comedic pacing', 'Clean coverage'],
       },
       {
         id: 'project-anything-goes',
@@ -333,10 +332,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'Broadway Rose Theatre Company',
         role: 'Mix Engineer 2',
         summary:
-          'Supporting a polished musical with musical clarity, confidence in transitions, and a compact show workflow.',
+          '',
         homeImages: productionGallery.anythingGoes,
         projectImages: productionGallery.anythingGoes,
-        highlights: ['Musical balance', 'Smooth transitions', 'Show support'],
       },
       {
         id: 'project-footloose',
@@ -346,10 +344,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Sound Designer, Mix Engineer, and LED Pixel System Design',
         summary:
-          'A production combining sound and show tech, with emphasis on timing, energy, and integrated design.',
+          '',
         homeImages: productionGallery.footloose,
         projectImages: productionGallery.footloose,
-        highlights: ['Integrated tech', 'Energy', 'Timing'],
       },
       {
         id: 'project-bright-star',
@@ -359,10 +356,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Sound Designer, Mix Engineer',
         summary:
-          'An intimate, textural production with space for detail in the mix and a warm scenic atmosphere.',
+          '',
         homeImages: productionGallery.brightStar,
         projectImages: productionGallery.brightStar,
-        highlights: ['Intimate balance', 'Textural sound', 'Warm look'],
       },
       {
         id: 'project-the-pirates-of-penzance',
@@ -372,10 +368,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Sound Designer, Mix Engineer',
         summary:
-          'A classic production handled with clear line delivery, ensemble definition, and a stable mix foundation.',
+          '',
         homeImages: productionGallery.pirates,
         projectImages: productionGallery.pirates,
-        highlights: ['Dialogue clarity', 'Ensemble definition', 'Stable mix'],
       },
       {
         id: 'project-the-hiding-place',
@@ -385,10 +380,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Assistant Sound Designer and Master Sound Technician',
         summary:
-          'A production emphasizing dependable infrastructure, show support, and careful execution behind the scenes.',
+          '',
         homeImages: productionGallery.hidingPlace,
         projectImages: productionGallery.hidingPlace,
-        highlights: ['Infrastructure', 'Execution', 'Backstage support'],
       },
       {
         id: 'project-sense-and-sensibility',
@@ -398,10 +392,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Mix Engineer',
         summary:
-          'A refined stage production with a focus on consistent levels, intelligible text, and a balanced ensemble sound.',
+          '',
         homeImages: productionGallery.senseAndSensibility,
         projectImages: productionGallery.senseAndSensibility,
-        highlights: ['Intelligibility', 'Balance', 'Period staging'],
       },
       {
         id: 'project-the-play-that-goes-wrong',
@@ -411,10 +404,9 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         client: 'George Fox University Theatre',
         role: 'Assistant Sound Designer',
         summary:
-          'A technically playful show that rewarded disciplined timing and dependable cues under pressure.',
+          '',
         homeImages: productionGallery.playThatGoesWrong,
         projectImages: productionGallery.playThatGoesWrong,
-        highlights: ['Cue timing', 'Reliability', 'Fast pacing'],
       }
     ],
   },
