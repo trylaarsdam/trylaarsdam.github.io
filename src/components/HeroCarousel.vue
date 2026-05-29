@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
               {{ currentSlide.description }}
             </p>
             <div class="hero-actions">
-              <RouterLink class="button button-primary" :to="currentSlide.href">learn more</RouterLink>
+              <RouterLink class="button button-primary" :to="currentSlide.href">Learn more</RouterLink>
             </div>
           </div>
         </div>
