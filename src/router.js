@@ -5,6 +5,7 @@ import NotFoundPage from './pages/NotFoundPage.vue'
 import ProjectDetailPage from './pages/ProjectDetailPage.vue'
 import ResumePage from './pages/ResumePage.vue'
 import AboutPage from './pages/AboutPage.vue'
+import { applySeo, metaForRoute } from './utils/seo.js'
 
 const routes = [
   {
@@ -39,7 +40,7 @@ const routes = [
   },
 ]
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
@@ -57,3 +58,9 @@ export default createRouter({
     return { top: 0, behavior: 'smooth' }
   },
 })
+
+router.afterEach((to) => {
+  applySeo(metaForRoute(to))
+})
+
+export default router

@@ -40,6 +40,7 @@ export const buildProjectMarkdown = (project) => project.markdown ?? project.mar
 export const site = {
   name: 'Todd Rylaarsdam',
   title: 'Audio and Software Engineer',
+  url: 'https://toddr.org',
   intro:
     'Refined production work and thoughtful engineering, presented with a calm, editorial feel.',
   bio:
