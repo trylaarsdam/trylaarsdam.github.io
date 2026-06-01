@@ -172,7 +172,7 @@ onBeforeUnmount(() => {
           <p class="eyebrow">{{ section.eyebrow }}</p>
           <h2>{{ section.title }}</h2>
         </div>
-        <p class="section-description">{{ section.description }}</p>
+        <!-- <p class="section-description">{{ section.description }}</p> -->
       </div>
 
       <div class="project-grid">

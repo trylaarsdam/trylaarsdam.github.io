@@ -92,6 +92,23 @@ export const heroSlides = [
   },
 ]
 
+const featuredProductionGallery = {
+  hunchback: [
+    image('GFU_Hunchback_Sound.jpeg'),
+    image('GFU_Hunchback_PitSL.jpeg'),
+    image('GFU_Hunchback_Wide.jpeg'),
+  ],
+  comedy: [image('comedy_of_errors.jpg'), image('20250831_FinalNight-33.jpg')],
+  anythingGoes: [image('anythinggoes1.jpg'), image('anythinggoes3.jpg')],
+  footloose: [image('footloose_1.jpg'), image('footloose_2.jpg'), image('footloose_3.jpg')],
+  brightStar: [image('brightstar1.jpg'), image('brightstar2.jpg'), image('brightstar3.jpg')],
+  pirates: [image('pirates1.jpg'), image('pirates2.jpg'), image('pirates3.jpg')],
+  senseAndSensibility: [image('sense1.jpg'), image('sense2.jpeg'), image('sense3.jpeg')],
+  playThatGoesWrong: [image('ptgw1.jpeg'), image('ptgw2.jpeg'), image('ptgw3.jpeg')],
+  pottingShed: [image('mayo2.jpg'), image('mayo3.jpg')],
+  oliver: [image('oliver1.jpg'), image('oliver2.jpg'), image('oliver3.jpg')],
+}
+
 const productionGallery = {
   hunchback: [
     image('GFU_Hunchback_Wide.jpeg'),
@@ -100,15 +117,15 @@ const productionGallery = {
     image('GFU_Hunchback_PitSR.jpeg'),
     image('GFU_Hunchback_Sound.jpeg'),
   ],
-  comedy: [image('comedy_of_errors.jpg')],
+  comedy: [image('comedy_of_errors.jpg'), image('20250831_FinalNight-33.jpg'), image('20250831_FinalNight-48_websize.jpg')],
   anythingGoes: [image('anythinggoes1.jpg'), image('anythinggoes3.jpg')],
-  footloose: [image('footloose2.jpg')],
+  footloose: [image('footloose_1.jpg'), image('footloose_2.jpg'), image('footloose_3.jpg'), image('footloose_4.jpg'), image('footloose_5.jpg')],
   brightStar: [image('brightstar1.jpg'), image('brightstar2.jpg'), image('brightstar3.jpg')],
-  pirates: [image('pirates2.jpg'), image('pirates3.jpg')],
-  hidingPlace: [image('20250831_FinalNight-31.jpg'), image('20250831_FinalNight-33.jpg'), image('20250831_FinalNight-48_websize.jpg')],
-  senseAndSensibility: [image('2603_Theater_NotreDame_CGL5863.jpg'), image('2603_Theater_NotreDame_GF43728.jpg')],
-  playThatGoesWrong: [image('PXL_20250402_185623176.jpg'), image('PXL_20250402_185623176 (1).jpg')],
+  pirates: [image('pirates1.jpg'), image('pirates2.jpg'), image('pirates3.jpg')],
+  senseAndSensibility: [image('sense1.jpg'), image('sense2.jpeg'), image('sense3.jpeg')],
+  playThatGoesWrong: [image('ptgw1.jpeg'), image('ptgw2.jpeg'), image('ptgw3.jpeg')],
   pottingShed: [image('mayo2.jpg'), image('mayo3.jpg')],
+  oliver: [image('oliver1.jpg'), image('oliver2.jpg'), image('oliver3.jpg')],
 }
 
 const engineeringGallery = {
@@ -118,6 +135,7 @@ const engineeringGallery = {
   sensors: [image('anl.jpg'), image('anl4.jpg'), image('anl3.jpg')],
   console: [image('mixing1.jpg'), image('mixing2.jpg'), image('mixing3.jpeg')],
   turingGuild: [image('turingguild3-scaled.jpg'), image('turingguild1.jpg'), image('turingguild2.jpg')],
+  adi: [image('adi_final.jpeg'), image('adi_wiring.jpeg')],
 }
 
 // Project authoring:
@@ -143,7 +161,11 @@ export const sections = [
         homeImages: engineeringGallery.adi,
         projectImages: engineeringGallery.adi,
         markdown: `
-
+<object data="/text_resources/adi_poster.pdf" type="application/pdf" width="100%" height="1555px">
+    <embed src="/text_resources/adi_poster.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/text_resources/adi_poster.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
         `
       },
       {
@@ -265,7 +287,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         role: 'Sound Designer, Mix Engineer',
         summary:
           '32 body mics, an 11 member pit orchestra, and 14 speakers combined to support the huge scale of this production, all in a 235 seat house.',
-        homeImages: productionGallery.hunchback,
+        homeImages: featuredProductionGallery.hunchback,
         projectImages: productionGallery.hunchback,
         highlights: ['Mix design', 'Pit communication', 'Large ensemble'],
         markdown: `
@@ -313,15 +335,15 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
 `,
       },
       {
-        id: 'project-comedy-of-errors',
-        title: 'Comedy of Errors',
+        id: 'project-the-comedy-of-errors',
+        title: 'The Comedy of Errors',
         year: '2025',
         venue: 'George Fox University Theatre',
         client: 'George Fox University Theatre',
         role: 'Sound Designer, Mix Engineer',
         summary:
           '',
-        homeImages: productionGallery.comedy,
+        homeImages: featuredProductionGallery.comedy,
         projectImages: productionGallery.comedy,
         markdown: `
 # Equipment Highlights
@@ -351,7 +373,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         role: 'Mix Engineer 2',
         summary:
           '',
-        homeImages: productionGallery.anythingGoes,
+        homeImages: featuredProductionGallery.anythingGoes,
         projectImages: productionGallery.anythingGoes,
         markdown: `
 # Creative Team
@@ -372,7 +394,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         role: 'Sound Designer, Mix Engineer, and LED Pixel System Design',
         summary:
           '',
-        homeImages: productionGallery.footloose,
+        homeImages: featuredProductionGallery.footloose,
         projectImages: productionGallery.footloose,
         markdown: `
 # Awards
@@ -405,7 +427,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         role: 'Sound Designer, Mix Engineer',
         summary:
           '',
-        homeImages: productionGallery.brightStar,
+        homeImages: featuredProductionGallery.brightStar,
         projectImages: productionGallery.brightStar,
         markdown: `
 # Awards
@@ -439,7 +461,7 @@ Turing Guild has been successfully used the primary LMS for multiple courses, in
         role: 'Sound Designer, Mix Engineer',
         summary:
           '',
-        homeImages: productionGallery.pirates,
+        homeImages: featuredProductionGallery.pirates,
         projectImages: productionGallery.pirates,
         markdown: `
 Designed and led the implementation of a new outdoor sound system for the amphitheatre at George Fox University, which debuted with this production. The system was designed to be flexible for both outdoor and indoor use, and to provide clear, even coverage throughout the amphitheatre using 6 QSC CP12 in three layers (front center, front side, and back). Overall the system was a huge success with plenty of headroom, minimal noise on stage, and clear sound throughout the venue.
@@ -460,29 +482,6 @@ Video monitoring system - conductor feed for actors
         `
       },
       {
-        id: 'project-the-hiding-place',
-        title: 'The Hiding Place',
-        year: '2024',
-        venue: 'George Fox University Theatre',
-        client: 'George Fox University Theatre',
-        role: 'Assistant Sound Designer and Master Sound Technician',
-        summary:
-          '',
-        homeImages: productionGallery.hidingPlace,
-        projectImages: productionGallery.hidingPlace,
-        markdown: `
-# Creative Team
-* Director – Cycerli Ash
-* Scenic Designer – Alex Meyer
-* Costume Designer – Taylor Young
-* Lighting Designer – Kacy Hughson
-* Sound Designer – Cycerli Ash
-* Assistant Sound Designer – Todd Rylaarsdam
-* Properties Artist – Atalia Fisher
-* Hair and Makeup Artist – Maddie Maulding
-        `
-      },
-      {
         id: 'project-sense-and-sensibility',
         title: 'Sense and Sensibility',
         year: '2023',
@@ -491,7 +490,7 @@ Video monitoring system - conductor feed for actors
         role: 'Mix Engineer',
         summary:
           '',
-        homeImages: productionGallery.senseAndSensibility,
+        homeImages: featuredProductionGallery.senseAndSensibility,
         projectImages: productionGallery.senseAndSensibility,
         markdown: `
 # Creative Team
@@ -511,7 +510,7 @@ Video monitoring system - conductor feed for actors
         role: 'Assistant Sound Designer',
         summary:
           '',
-        homeImages: productionGallery.playThatGoesWrong,
+        homeImages: featuredProductionGallery.playThatGoesWrong,
         projectImages: productionGallery.playThatGoesWrong,
         markdown: `
 # Creative Team
@@ -525,7 +524,29 @@ Video monitoring system - conductor feed for actors
 * Properties Artist – Rebecca Jiron
 * Hair and Makeup Artist – Marin Donohue
         `
-      }
+      },
+      {
+        id: 'oliver',
+        title: 'Oliver!',
+        year: '2022',
+        venue: 'George Fox University Theatre',
+        client: 'George Fox University Theatre',
+        role: 'Mix Engineer',
+        summary:
+          '',
+        homeImages: featuredProductionGallery.oliver,
+        projectImages: productionGallery.oliver,
+        markdown: `
+# Creative Team
+* Director – Ben Tissell
+* Scenic Designer – Bryan Boyd
+* Costume Designer – Kimberly Hergert
+* Lighting Designer – Kacy Hughson
+* Sound Designer – Brian Moen
+* Props Designer - Jeff Lafferty
+* Hair and Makeup Artist – Emma Johnson
+`
+      },
     ],
   },
 ]
